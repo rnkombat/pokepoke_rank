@@ -1,0 +1,32 @@
+/* App.css */
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f7fa;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 640px) {
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .App {
+      padding: 15px;
+    }
+  }
