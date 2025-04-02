@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokepoke_rank/static/css/main.78dad00c.css",
+    "main.js": "/pokepoke_rank/static/js/main.641e9ae5.js",
+    "index.html": "/pokepoke_rank/index.html",
+    "main.78dad00c.css.map": "/pokepoke_rank/static/css/main.78dad00c.css.map",
+    "main.641e9ae5.js.map": "/pokepoke_rank/static/js/main.641e9ae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78dad00c.css",
+    "static/js/main.641e9ae5.js"
+  ]
+}
