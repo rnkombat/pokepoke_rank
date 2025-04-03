@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ExpectedValueCalculator.css';
+import './ExpectedValueCalculator2.css';
 
-const ExpectedValueCalculator = () => {
+const ExpectedValueCalculator2 = () => {
   const [winRate, setWinRate] = useState(0.5);
   const [expectedValue, setExpectedValue] = useState(null);
   const [error, setError] = useState('');
@@ -12,14 +12,14 @@ const ExpectedValueCalculator = () => {
       return null;
     }
     
-    const E1 = p * (1 - p) * 10;
-    const E2 = Math.pow(p, 2) * (1 - p) * 13;
-    const E3 = Math.pow(p, 3) * (1 - p) * 16;
-    const E4 = Math.pow(p, 4) * (1 - p) * 19;
-    const E5 = Math.pow(p, 5) * 22;
-    const E6 = (1 - p) * (-5);
+    // 勝った場合の期待値: p * 10（勝率×勝利ポイント）
+    const winExpectedValue = p * 10;
     
-    return E1 + E2 + E3 + E4 + E5 + E6;
+    // 負けた場合の期待値: (1-p) * (-7)（敗率×敗北ポイント）
+    const loseExpectedValue = (1 - p) * (-7);
+    
+    // 合計期待値
+    return winExpectedValue + loseExpectedValue;
   };
 
   const handleCalculate = () => {
@@ -36,16 +36,12 @@ const ExpectedValueCalculator = () => {
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4 text-center">スーパーボールまで</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">ハイパーボール以降</h1>
       
       <div className="mb-6">
         <div className="mb-2 text-sm text-gray-600">
-          <p>一勝: +10pt</p>
-          <p>二連勝: +13pt</p>
-          <p>三連勝: +16pt</p>
-          <p>四連勝: +19pt</p>
-          <p>五連勝以上: +22pt</p>
-          <p>負け: -5pt</p>
+          <p>勝ち: +10pt</p>
+          <p>負け: -7pt</p>
         </div>
       </div>
       
@@ -97,4 +93,4 @@ const ExpectedValueCalculator = () => {
   );
 };
 
-export default ExpectedValueCalculator;
+export default ExpectedValueCalculator2;

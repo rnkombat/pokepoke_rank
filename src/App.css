@@ -30,3 +30,35 @@
       padding: 15px;
     }
   }
+
+  
+
+.component-container {
+    margin-bottom: 2rem;
+  }
+  
+  .component-container:last-child {
+    margin-bottom: 0;
+  }
+  
+  .components-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .components-layout {
+      gap: 1.5rem;
+      padding: 1.5rem 0.75rem;
+    }
+    
+    .component-container {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  
