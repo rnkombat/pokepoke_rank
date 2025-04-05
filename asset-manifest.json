@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pokepoke_rank/static/css/main.6c497413.css",
-    "main.js": "/pokepoke_rank/static/js/main.d35f2d8c.js",
+    "main.js": "/pokepoke_rank/static/js/main.079908d7.js",
     "index.html": "/pokepoke_rank/index.html",
     "main.6c497413.css.map": "/pokepoke_rank/static/css/main.6c497413.css.map",
-    "main.d35f2d8c.js.map": "/pokepoke_rank/static/js/main.d35f2d8c.js.map"
+    "main.079908d7.js.map": "/pokepoke_rank/static/js/main.079908d7.js.map"
   },
   "entrypoints": [
     "static/css/main.6c497413.css",
-    "static/js/main.d35f2d8c.js"
+    "static/js/main.079908d7.js"
   ]
 }
