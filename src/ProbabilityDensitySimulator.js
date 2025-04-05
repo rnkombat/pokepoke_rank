@@ -26,9 +26,9 @@ const Card = ({ className, children, ...props }) => (
   );
 
 const ProbabilityDensitySimulator = () => {
-  const [winRate, setWinRate] = useState(0.55);
+  const [winRate, setWinRate] = useState(0.5);
   const [initialPoints, setInitialPoints] = useState(0);
-  const [targetPoints, setTargetPoints] = useState(1000);
+  const [targetPoints, setTargetPoints] = useState(1450);
   const [numSimulations, setNumSimulations] = useState(1000);
   const [simResults, setSimResults] = useState(null);
   const [isCalculating, setIsCalculating] = useState(false);
@@ -256,15 +256,15 @@ const ProbabilityDensitySimulator = () => {
                   <div className="text-xl font-bold">{simResults.average.toFixed(1)}</div>
                 </div>
                 <div className="p-2 bg-blue-50 rounded">
-                  <div className="text-sm">中央値（50%タイル）</div>
+                  <div className="text-sm">中央値（50%）</div>
                   <div className="text-xl font-bold">{simResults.percentiles[50]}</div>
                 </div>
                 <div className="p-2 bg-blue-50 rounded">
-                  <div className="text-sm">25%タイル</div>
+                  <div className="text-sm">25%</div>
                   <div className="text-xl font-bold">{simResults.percentiles[25]}</div>
                 </div>
                 <div className="p-2 bg-blue-50 rounded">
-                  <div className="text-sm">75%タイル</div>
+                  <div className="text-sm">75%</div>
                   <div className="text-xl font-bold">{simResults.percentiles[75]}</div>
                 </div>
               </div>
